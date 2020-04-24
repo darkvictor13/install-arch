@@ -3,12 +3,12 @@ hwclock --systohc
 echo en_US.UTF-8 UTF-8 >> vim /etc/locale.gen
 locale-gen
 echo LANG=en_US.UTF-8 >> /etc/locale.conf
-echo -e "Digite seu nome de usuario\n"
+echo -e "Digite seu nome do pc\nObs: sera o nome do pc na rede\n->"
 read nome_usuario
 echo $nome_usuario > /etc/hostname
-echo -e "127.0.0.1\tlocalhost.localdomain\tlocalhost\n" > /etc/hosts
-echo -e "::1\t\tlocalhost.localdomain\tlocalhost\n" >> /etc/hosts
-echo -e "127.0.1.1\t$nome_usuario.localdomain\t$nome_usuario\n" >> /etc/hosts
+echo -e "127.0.0.1\tlocalhost.localdomain\tlocalhost" > /etc/hosts
+echo -e "::1\t\tlocalhost.localdomain\tlocalhost" >> /etc/hosts
+echo -e "127.0.1.1\t$nome_usuario.localdomain\t$nome_usuario" >> /etc/hosts
 passwd
 pacman -S grub-efi-x86_64 efibootmgr
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
