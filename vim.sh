@@ -1,4 +1,6 @@
-#sudo pacman -S vim cmake
+# arch
+sudo pacman -S vim cmake
+# para ubuntu descomente a linha debaixoi, comente a de cima
 sudo apt-get build-essential install cmake vim
 echo "Insira o caminho aonde vc clonou os dot files a partir da home"
 echo "Exemplo se vc colocou em ~/Documents/.dot-files"
