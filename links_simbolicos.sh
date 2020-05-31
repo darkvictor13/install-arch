@@ -4,13 +4,13 @@ echo "Insira [~/Documents]"
 echo "Exemplo se vc colocou em ~/.dot-files"
 echo "Insira [~]"
 read DIRETORIO
-echo "Deseja fazer os links simbolicos agora[Y/n]"
-read CONTINUA
-if [[ "$CONTINUA" != 'n' || "$CONTINUA" != 'N' ]]; then
-	echo "O programa continuaria"
-else 
-	echo "O programa nao continuaria"
-fi	
+#echo "Deseja fazer os links simbolicos agora[Y/n]"
+#read CONTINUA
+#if [[ "$CONTINUA" != 'n' || "$CONTINUA" != 'N' ]]; then
+#	echo "O programa continuaria"
+#else 
+#	echo "O programa nao continuaria"
+#fi	
 
 sudo su
 
